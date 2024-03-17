@@ -9,7 +9,7 @@ for($i = 0; $i < $N; $i++){
         $cod = ord($chars[$j]);
         $order = $cod - 64;
         $new = $order - $shift;
-        if($new < 0){   
+        if($new <= 0){   
             $new = $new + 26;
         }
         $chars[$j] = chr($new + 64);
